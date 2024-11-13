@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 #!/usr/bin/env python3
 # # acima qdo usa ! (shibang) indica o caminho do python antes do programa rodar
 #para pesquisar o caminho, no termimal bash,digite which python.
@@ -41,7 +41,7 @@ elif currente_language=="es_SP":
 elif currente_language=="es_SP":
     msg="Bonjour, Monde!"
 
-=======
+
 #!/usr/bin/env python3
 # # acima qdo usa ! (shibang) indica o caminho do python antes do programa rodar
 #para pesquisar o caminho, no termimal bash,digite which python.
@@ -84,7 +84,6 @@ elif currente_language=="es_SP":
 elif currente_language=="es_SP":
     msg="Bonjour, Monde!"
 
->>>>>>> 14da9afabfea857ba48a516de4b45feac6446804
 #!/usr/bin/env python3
 # # acima qdo usa ! (shibang) indica o caminho do python antes do programa rodar
 #para pesquisar o caminho, no termimal bash,digite which python.
@@ -121,8 +120,8 @@ msg={
     "en_US":"Hello, World!",
     "pt_BR":"Olá, Mundo!",
     "it_IT":"CIao, Mondo!",
-    "es_SP":"Holla, Mundo!",
-    "es_SP":"Bonjour, Monde!"
+    "fr_FR":"Bonjour, Monde!",
+    "es_SP":"Holla, Mundo!"
 }
 
 print(msg[currente_language])
