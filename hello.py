@@ -117,12 +117,12 @@ import os
 
 currente_language=os.getenv("LANG","en_US")[:5]
 
-msg="Hello, World!"
-if currente_language =="pt_BR":
-    msg ="Olá, Mundo!"
-elif currente_language=="it_IT":
-    msg="CIao, Mondo!"
-elif currente_language=="es_SP":
-    msg="Holla, Mundo!"
-elif currente_language=="es_SP":
-    msg="Bonjour, Monde!"
+msg={
+    "en_US":"Hello, World!",
+    "pt_BR":"Olá, Mundo!",
+    "it_IT":"CIao, Mondo!",
+    "es_SP":"Holla, Mundo!",
+    "es_SP":"Bonjour, Monde!"
+}
+
+print(msg[currente_language])

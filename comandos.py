@@ -94,14 +94,21 @@ assim dentro desse novo arquivo .gitignore só digitar .venv
 para que a pasta .venv seja ignorada pelo github
 na pesquisa git status.
 ..........................
+pode verificar a docimentação do ambiente .venv no docs.python:
+   https://docs.python.org/pt-br/3/library/venv.html
+..........................
 toda vez que for fazer um commit de der erro de index.lock
 
 pode executar a remoção do index da seguinte forma:
     rm -f .git/index.lock
+..................
 
+no projeto vamos instalar um projeto o pypi.org o  interpretador ipython:
+     python -m pip install ipython
+(esse interpretador é melho do que o que vem no proprio python(>>>))
+o ipython é colorido, tem autocomplete e o help mais poderoso
+o ipython tem a versao web, que pe o jupyter, q antes chamava ipython. 
 
-
-
-
-
+devemos tbm fazer um upgrade no proprio pip para atualizalo com os novos projetos
+    python -m pip install --upgrade pip
 """
