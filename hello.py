@@ -99,6 +99,8 @@ Como Usar:
 
 Tenha avariável LANG devidamente configurada ex:
       export LANG=pt_br
+ou informe atraves do CLI argument '--lang'
+ou o usuário terá que digitar
 
 Execução:
     python3 hello.py
@@ -137,7 +139,12 @@ for arg in sys.argv[1:]:
 
 currente_language = arguments["lang"]
 if currente_language is None:
-    currente_language=os.getenv("LANG","en_US")[:5]
+    if "LANG" in os.environ:
+        currente_language=os.getenv("LANG")
+    else:
+        currente_language=input("choose a language:")
+        
+currente_language= currente_language[:5]
 
 msg={
     "en_US":"Hello, World!",
