@@ -116,17 +116,28 @@ import os
 import sys
 
 arguments={
-    "lang": None,
-    "count":None,
+    "lang": None, "count":1,
 }
 for arg in sys.argv[1:]:
    # print(f"{sys.argv=}")
    #print(arg.split("="))
    # TODO: tratar ValueError
     key,value=arg.split("=")
+    #funçao strip(trim) para remover espaços e traços digitados nos argments: 
+    key=key.lstrip("-").strip()
+    value=value.strip()
 
+    #funçao de erro:
+    if key not in arguments:
+        print(f"Invalid option '{key}'")
+        #parar a execução no caso invalido:
+        sys.exit()
+    arguments[key]=value
+    #print(key, value)
 
-currente_language=os.getenv("LANG","en_US")[:5]
+currente_language = arguments["lang"]
+if currente_language is None:
+    currente_language=os.getenv("LANG","en_US")[:5]
 
 msg={
     "en_US":"Hello, World!",
@@ -136,4 +147,4 @@ msg={
     "es_SP":"Holla, Mundo!"
 }
 
-print(msg[currente_language])
+print(msg[currente_language] * int(arguments["count"]))
