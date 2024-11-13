@@ -113,6 +113,18 @@ __license__="Unlicense"
 
 #Code:
 import os  
+import sys
+
+arguments={
+    "lang": None,
+    "count":None,
+}
+for arg in sys.argv[1:]:
+   # print(f"{sys.argv=}")
+   #print(arg.split("="))
+   # TODO: tratar ValueError
+    key,value=arg.split("=")
+
 
 currente_language=os.getenv("LANG","en_US")[:5]
 

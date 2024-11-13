@@ -55,7 +55,7 @@ aparecera os aquivos : pip, pip3, python, pythonw
 , a pasta .VENV está isolada do sistema, se der algum problema, posso delegar ela 
 e começar uma nova venv, pq os arquivos estarão dentro delas e isolados
 
-para a tivar o venv no terminal digite:
+para awtivar o venv no terminal digite:
 
     source .venv/Scripts/activate
 
@@ -94,7 +94,7 @@ assim dentro desse novo arquivo .gitignore só digitar .venv
 para que a pasta .venv seja ignorada pelo github
 na pesquisa git status.
 ..........................
-pode verificar a docimentação do ambiente .venv no docs.python:
+pode verificar a documentação do ambiente .venv no docs.python:
    https://docs.python.org/pt-br/3/library/venv.html
 ..........................
 toda vez que for fazer um commit de der erro de index.lock
